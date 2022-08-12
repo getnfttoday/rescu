@@ -70,18 +70,15 @@
 
     <distributionManagement>
         <repository>
-            <id>sonatype-nexus-staging</id>
-            <name>Sonatype Nexus Release Repository</name>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+            <id>github</id>
+            <name>GitHub GETNFT Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/getnfttoday/Rescu</url>
         </repository>
-
         <snapshotRepository>
-            <id>sonatype-nexus-snapshots</id>
-            <name>Sonatype Nexus Snapshots</name>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <id>github</id>
+            <name>GitHub GetNFT Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/getnfttoday/Rescu</url>
         </snapshotRepository>
-
-        <downloadUrl>https://oss.sonatype.org/content/groups/public/com/github/mmazi/rescu</downloadUrl>
     </distributionManagement>
 
     <build>
@@ -251,7 +248,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
+        <maven.test.skip>true</maven.test.skip>
         <version.jackson>2.12.0</version.jackson>
     </properties>
 </project>
